@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,9 +12,9 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-21 at 11.07.33 AM" translatesAutoresizingMaskIntoConstraints="NO" id="AF6-ae-p3k">
@@ -164,7 +165,7 @@
                                 <rect key="frame" x="20" y="178" width="374" height="362"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Tatyana Fazlalizadeh, highlighting her intersecting passions of art and activism began a movement through her murals around Brooklyn, NY. The art advocated for social justice topics she was passionate about including sexual harassment, women's rights, and more. Critics have commented on how Fazlalizadeh's work can be seen as "propaganda" or an unwise career move, however as viewers, we should instead sppreciate her bold way of blurring these lines to express the intersection creatively and directly addressing the issue of street harassment. </mutableString>
+                                <string key="text">Tatyana Fazlalizadeh, highlighting her intersecting passions of art and activism began a movement through her murals around Brooklyn, NY. The art advocated for social justice topics she was passionate about including sexual harassment, women's rights, and more. Critics have commented on how Fazlalizadeh's work can be seen as "propaganda" or an unwise career move, however as viewers, we should instead sppreciate her bold way of blurring these lines to express the intersection creatively and directly addressing the issue of street harassment. </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -179,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="1539.5089285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="SHp-2v-ghd">
             <objects>
-                <viewController id="urr-1B-eDJ" sceneMemberID="viewController">
+                <viewController id="urr-1B-eDJ" customClass="newViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hiM-dB-ZeF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,47 +217,73 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Lhi-72-FI0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6f-Q1-pFY">
-                                <rect key="frame" x="81" y="397" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="racism"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wj0-8i-aEe">
                                 <rect key="frame" x="57" y="492" width="116" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="gender justice"/>
+                                <connections>
+                                    <action selector="genderLink:" destination="urr-1B-eDJ" eventType="touchUpInside" id="eEA-7N-194"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ip-bM-nvv">
                                 <rect key="frame" x="242" y="492" width="106" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="gun violence"/>
+                                <connections>
+                                    <action selector="gunViolenceLink:" destination="urr-1B-eDJ" eventType="touchUpInside" id="pXU-XP-1QQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-JB-ieZ">
-                                <rect key="frame" x="81" y="595" width="67" height="31"/>
+                                <rect key="frame" x="61" y="595" width="107" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CQ-HE-xDB">
-                                <rect key="frame" x="261" y="595" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="lgbtq+ rights"/>
+                                <connections>
+                                    <action selector="gayLink:" destination="urr-1B-eDJ" eventType="touchUpInside" id="7iA-no-dLc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74W-RS-h2w">
                                 <rect key="frame" x="244" y="396" width="123" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="global warming"/>
+                                <connections>
+                                    <action selector="globalWarmLink:" destination="urr-1B-eDJ" eventType="touchUpInside" id="DnW-qN-ei4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd4-gJ-Frl">
+                                <rect key="frame" x="81" y="396" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="racism"/>
+                                <connections>
+                                    <action selector="racismB:" destination="urr-1B-eDJ" eventType="touchUpInside" id="448-jO-c0i"/>
+                                    <action selector="racismLink:" destination="urr-1B-eDJ" eventType="touchUpInside" id="UUM-Pt-wq5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CQ-HE-xDB">
+                                <rect key="frame" x="223" y="595" width="145" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="sexual harassment"/>
+                                <connections>
+                                    <action selector="SALink:" destination="urr-1B-eDJ" eventType="touchUpInside" id="eYg-7k-O9l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8zx-UC-b9a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="e5A-e5-Qnl"/>
+                    <connections>
+                        <outlet property="SALink" destination="6CQ-HE-xDB" id="Wo6-xN-WDm"/>
+                        <outlet property="gayLink" destination="3gj-JB-ieZ" id="Xmg-SE-DnK"/>
+                        <outlet property="genderLink" destination="Wj0-8i-aEe" id="5dy-td-72N"/>
+                        <outlet property="globalWarmLink" destination="74W-RS-h2w" id="K1w-Wq-FiZ"/>
+                        <outlet property="gunViolenceLink" destination="5Ip-bM-nvv" id="7Hs-ra-Vcu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBh-AP-TFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -305,7 +332,7 @@
         <!--View Controller-->
         <scene sceneID="OWi-LM-605">
             <objects>
-                <viewController id="lLm-QU-aGT" sceneMemberID="viewController">
+                <viewController id="lLm-QU-aGT" customClass="ViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vmz-it-5LO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,6 +365,9 @@
                                 <color key="tintColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Take a picture"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="lLm-QU-aGT" eventType="touchUpInside" id="p5m-Hm-iik"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp6-9s-b2h">
                                 <rect key="frame" x="35" y="534" width="151" height="35"/>
@@ -345,13 +375,16 @@
                                 <color key="tintColor" red="1" green="1" blue="0.99999994039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Choose from library"/>
+                                <connections>
+                                    <action selector="choosePhotoTapped:" destination="lLm-QU-aGT" eventType="touchUpInside" id="pgo-Bd-peU"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sk-qa-6of">
-                                <rect key="frame" x="35" y="165" width="345" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-21 at 11.19.14 AM" translatesAutoresizingMaskIntoConstraints="NO" id="WCl-h8-pHj">
                                 <rect key="frame" x="35" y="596" width="359" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sk-qa-6of">
+                                <rect key="frame" x="35" y="162" width="345" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -359,6 +392,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TTp-ds-Ry7"/>
+                    <connections>
+                        <outlet property="displayImage" destination="5sk-qa-6of" id="tNE-nd-LYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hi1-aG-QHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -476,7 +512,7 @@
                                 <rect key="frame" x="23" y="150" width="365" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Maggin's art illustrating a line of hands held up in protest, holding letters to spell out "enough", is her way of commemorating all the victims of gun violence from the the past 23 years, surrounded by victims names making up the background. The painting was also used as her poster for the March 2018 student walkout, signifying true change. She says, "I wanted to get the message across that students are here to participate, because this isn't an issue that's going away," Maggin said. "I also thought it was the perfect oppourtunity to give the people who lost their lives to gun violence a platform." Maggin believes that art has a powerful ability to resonate with people and convey a message. She says, "when you observe art, you see something and then feel a certain emotion," Maggin said. "A lot of times, art can show the drastic impact that events can have on people, like gun violence, and that's not something  that can be easily portrayed in speeches."</mutableString>
+                                <string key="text">Maggin's art illustrating a line of hands held up in protest, holding letters to spell out "enough", is her way of commemorating all the victims of gun violence from the the past 23 years, surrounded by victims names making up the background. The painting was also used as her poster for the March 2018 student walkout, signifying true change. She says, "I wanted to get the message across that students are here to participate, because this isn't an issue that's going away," Maggin said. "I also thought it was the perfect oppourtunity to give the people who lost their lives to gun violence a platform." Maggin believes that art has a powerful ability to resonate with people and convey a message. She says, "when you observe art, you see something and then feel a certain emotion," Maggin said. "A lot of times, art can show the drastic impact that events can have on people, like gun violence, and that's not something  that can be easily portrayed in speeches."</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -525,7 +561,7 @@
                                 <rect key="frame" x="31" y="163" width="352" height="347"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">The current state of air pollution in our world is damaging crops and trees, animals and has become a big contributor to global warming and other environmental stresses. The main cause of air pollution is burning of fossil fuels. Harmful gases like sulphur dioxide, carbon monoxide etc. are released into the atmosphere due to incomplete combustion of fossil fuels which pollutes the air. According to National Geographic, air pollution is now considered to be the world's largest environmental health threat, accounting for 7 million deaths around the year causin a number of diseases, including asthma, cancer, pulmonary illnesses and heart disease.</mutableString>
+                                <string key="text">The current state of air pollution in our world is damaging crops and trees, animals and has become a big contributor to global warming and other environmental stresses. The main cause of air pollution is burning of fossil fuels. Harmful gases like sulphur dioxide, carbon monoxide etc. are released into the atmosphere due to incomplete combustion of fossil fuels which pollutes the air. According to National Geographic, air pollution is now considered to be the world's largest environmental health threat, accounting for 7 million deaths around the year causin a number of diseases, including asthma, cancer, pulmonary illnesses and heart disease.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -764,7 +800,7 @@
         <segue reference="SAV-zT-ayv"/>
         <segue reference="66F-X7-Hf8"/>
         <segue reference="ISE-B1-s2q"/>
-        <segue reference="Lhi-72-FI0"/>
+        <segue reference="3XU-kJ-hKD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2022-07-20 at 1.46.31 PM" width="392" height="702"/>
