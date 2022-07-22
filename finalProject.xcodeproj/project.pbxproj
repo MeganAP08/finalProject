@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED7FD1912889F7DB008D12C0 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FD1902889F7DB008D12C0 /* newViewController.swift */; };
+		ED7FD195288A2AAC008D12C0 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FD194288A2AAB008D12C0 /* thirdViewController.swift */; };
 		F49A9EA8288882DE00CCFDE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A9EA7288882DE00CCFDE3 /* AppDelegate.swift */; };
 		F49A9EAA288882DE00CCFDE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A9EA9288882DE00CCFDE3 /* SceneDelegate.swift */; };
 		F49A9EAC288882DE00CCFDE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A9EAB288882DE00CCFDE3 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		ED7FD1902889F7DB008D12C0 /* newViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
+		ED7FD194288A2AAB008D12C0 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		F49A9EA4288882DE00CCFDE3 /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49A9EA7288882DE00CCFDE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49A9EA9288882DE00CCFDE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F49A9EA7288882DE00CCFDE3 /* AppDelegate.swift */,
 				F49A9EA9288882DE00CCFDE3 /* SceneDelegate.swift */,
 				F49A9EAB288882DE00CCFDE3 /* ViewController.swift */,
+				ED7FD194288A2AAB008D12C0 /* thirdViewController.swift */,
 				F49A9EAD288882DE00CCFDE3 /* Main.storyboard */,
 				ED7FD1902889F7DB008D12C0 /* newViewController.swift */,
 				F49A9EB3288882E000CCFDE3 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			files = (
 				ED7FD1912889F7DB008D12C0 /* newViewController.swift in Sources */,
 				F49A9EAC288882DE00CCFDE3 /* ViewController.swift in Sources */,
+				ED7FD195288A2AAC008D12C0 /* thirdViewController.swift in Sources */,
 				F49A9EA8288882DE00CCFDE3 /* AppDelegate.swift in Sources */,
 				F49A9EB2288882DE00CCFDE3 /* finalProject.xcdatamodeld in Sources */,
 				F49A9EAA288882DE00CCFDE3 /* SceneDelegate.swift in Sources */,

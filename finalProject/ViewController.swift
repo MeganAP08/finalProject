@@ -39,6 +39,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             displayImage.image = selectedImage
         }
         imagePicker.dismiss(animated: true, completion: nil)
+    
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toBrowsePage" {
+                let dvc = segue.destination as! thirdViewController
+                dvc.newImage = displayImage.image
+            }
+        }
     }
     
 

@@ -183,9 +183,9 @@
         <!--New View Controller-->
         <scene sceneID="SHp-2v-ghd">
             <objects>
-                <viewController id="urr-1B-eDJ" customClass="newViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="urr-1B-eDJ" customClass="newViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hiM-dB-ZeF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-20 at 3.55.45 PM" translatesAutoresizingMaskIntoConstraints="NO" id="glJ-1J-rPp">
@@ -292,9 +292,9 @@
         <!--View Controller-->
         <scene sceneID="Ecq-Lz-AK7">
             <objects>
-                <viewController id="97L-3h-FmE" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="97L-3h-FmE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r1I-ke-DuR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-20 at 3.55.53 PM" translatesAutoresizingMaskIntoConstraints="NO" id="lck-Uk-DAV">
@@ -318,6 +318,54 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="3XU-kJ-hKD"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTn-Wa-SiQ">
+                                <rect key="frame" x="71" y="280" width="71" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Racism"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52x-8g-9S4">
+                                <rect key="frame" x="45" y="378" width="125" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Womans Rights"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoY-m0-kck">
+                                <rect key="frame" x="53" y="486" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="lgbtq+ rights"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWC-So-REA">
+                                <rect key="frame" x="56" y="572" width="122" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gender Justice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUd-et-qR2">
+                                <rect key="frame" x="221" y="280" width="127" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Global Warming"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-PF-81j">
+                                <rect key="frame" x="230" y="379" width="110" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gun Violence"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpf-rm-jWr">
+                                <rect key="frame" x="221" y="486" width="148" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sexual Harassment"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1t-ZF-OuI">
+                                <rect key="frame" x="227" y="580" width="137" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Immigration Laws"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XKO-8o-Fvb"/>
@@ -379,14 +427,17 @@
                                     <action selector="choosePhotoTapped:" destination="lLm-QU-aGT" eventType="touchUpInside" id="pgo-Bd-peU"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-21 at 11.19.14 AM" translatesAutoresizingMaskIntoConstraints="NO" id="WCl-h8-pHj">
-                                <rect key="frame" x="35" y="596" width="359" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sk-qa-6of">
                                 <rect key="frame" x="35" y="162" width="345" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rj-mg-Fae">
+                                <rect key="frame" x="158" y="645" width="136" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Write Description"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pMB-Ou-Qj7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -509,10 +560,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="luG-tc-UNk">
-                                <rect key="frame" x="23" y="150" width="365" height="357"/>
+                                <rect key="frame" x="20" y="162" width="365" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Maggin's art illustrating a line of hands held up in protest, holding letters to spell out "enough", is her way of commemorating all the victims of gun violence from the the past 23 years, surrounded by victims names making up the background. The painting was also used as her poster for the March 2018 student walkout, signifying true change. She says, "I wanted to get the message across that students are here to participate, because this isn't an issue that's going away," Maggin said. "I also thought it was the perfect oppourtunity to give the people who lost their lives to gun violence a platform." Maggin believes that art has a powerful ability to resonate with people and convey a message. She says, "when you observe art, you see something and then feel a certain emotion," Maggin said. "A lot of times, art can show the drastic impact that events can have on people, like gun violence, and that's not something  that can be easily portrayed in speeches."</string>
+                                <mutableString key="text">ABOUT MAGGIN'S ART +  CONTEXT:                                                                                                                                                    Maggin's art illustrating a line of hands held up in protest, holding letters to spell out "enough", is her way of commemorating all the victims of gun violence from the the past 23 years, surrounded by victims names making up the background. The painting was also used as her poster for the March 2018 student walkout, signifying true change. She says, "I wanted to get the message across that students are here to participate, because this isn't an issue that's going away," Maggin said. "I also thought it was the perfect oppourtunity to give the people who lost their lives to gun violence a platform." Maggin believes that art has a powerful ability to resonate with people and convey a message. She says, "when you observe art, you see something and then feel a certain emotion," Maggin said. "A lot of times, art can show the drastic impact that events can have on people, like gun violence, and that's not something  that can be easily portrayed in speeches."</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -576,12 +627,12 @@
             </objects>
             <point key="canvasLocation" x="2398.5507246376815" y="410.49107142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="aW7-Hc-h01">
             <objects>
-                <viewController id="tsv-jZ-PkZ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="tsv-jZ-PkZ" customClass="thirdViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UIH-dX-3Ig">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-Cl-c5H">
@@ -687,11 +738,18 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="gt0-Jb-Fll"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-Q2-yIG">
+                                <rect key="frame" x="55" y="538" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G0B-PG-LtA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="IBO-cf-pLA"/>
+                    <connections>
+                        <outlet property="browsingImage" destination="NZL-Q2-yIG" id="MZc-KN-SUh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUO-ct-zfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xbb-wh-xXd">
@@ -795,8 +853,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="pte-Zu-7LX"/>
         <segue reference="xuv-mf-CqG"/>
-        <segue reference="jcb-nV-w9P"/>
+        <segue reference="LCQ-lv-nOI"/>
         <segue reference="SAV-zT-ayv"/>
         <segue reference="66F-X7-Hf8"/>
         <segue reference="ISE-B1-s2q"/>
@@ -811,12 +870,14 @@
         <image name="Screen Shot 2022-07-20 at 3.55.53 PM" width="386" height="686"/>
         <image name="Screen Shot 2022-07-20 at 4.01.23 PM" width="384" height="692"/>
         <image name="Screen Shot 2022-07-21 at 11.07.33 AM" width="396" height="704"/>
-        <image name="Screen Shot 2022-07-21 at 11.19.14 AM" width="194" height="162"/>
         <image name="art1" width="150" height="102"/>
         <image name="art2" width="150" height="150"/>
         <image name="art3" width="150" height="227"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
